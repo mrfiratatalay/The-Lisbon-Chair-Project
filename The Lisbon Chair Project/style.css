@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  background-color: #CAF9EB;
+  border-bottom: 8px solid #09563F;
+
+}
+
+.container {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+  margin-top: 6.4rem;
+}
+
+.header-text-box {
+  align-self: center;
+}
+
+h1 {
+
+  margin-bottom: 3.2rem;
+  font-size: 4.4rem;
+  line-height: 1.1;
+  letter-spacing: -1px;
+
+}
+
+
+
+.header-text {
+  margin-bottom: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.btn:link,
+.btn:visited {
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #09563F;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 10rem;
+  position: relative;
+  transition: all .4s;
+}
+
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  background-color: #0C7757;
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
+  background-color: #0C7757;
+  transform: translateY(-1px);
+}
+
+.btn--big:link,
+.btn--big:visited {
+  padding: 1.6rem 3.2rem;
+  font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- */
+/* //BENIM EKLEDIKLERIM */
+/* ----------------------------- */
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  70% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.animation-left {
+  animation: moveInLeft .5s ease-out;
+
+}
+
+.animation-bottom {
+
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+.animation-bomb::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .5s;
+}
+
+.animation-bomb:hover::after {
+  transform: scale(1.4, 1.6);
+  background-color: #0C7757;
+  opacity: 0;
+}
+
+
+/* -------------------------------- */
+/* //BENIM EKLEDIKLERIM NAVIGASYON KISMI */
+/* ----------------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.foto {
+  width: 13%;
+}
+
+.main-nav {}
+
+.main-nav--list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.tikla:link,
+.tikla:visited {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.tikla:hover,
+.tikla:active {
+  color: #09563F;
+
+}
+
+.btn-tikla {
+  padding: 1.2rem 2.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- */
+/* //DEVAMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM*/
+/* ----------------------------- */
+
+.margin-bottom-sm {
+  margin-bottom: 10.8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  margin-bottom: 4.8rem;
+  letter-spacing: -0.5px;
+
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 8rem;
+
+}
+
+.features-icon {
+  width: 3.2rem;
+  color: #087f5b;
+  margin-bottom: 2.4rem;
+
+}
+
+.features-title {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.features-text {
+  font-size: 1.7rem;
+  line-height: 1.7;
+}
+
+
+
+
+.testimonial-section {
+  background-color: #09563F;
+  color: #fff;
+  padding: 4rem 3.2rem;
+  border-radius: 1.2rem;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 8rem;
+
+}
+
+.testimonial-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.tetsimonial-box {
+  align-self: center;
+}
+
+.testimonial-header {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 2.4rem;
+}
+
+.testimonial-author {
+  color: #c3fae8;
+  font-size: 1.8rem;
+}
+
+
+
+
+
+.chair {
+  border-radius: 1.2rem;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
+  background-color: #F0FFFB;
+  transition: all .3s;
+}
+
+.chair-img {
+  width: 100%;
+  overflow: hidden;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.chair-box {
+  padding: 3.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.chair-details {
+  list-style: none;
+  margin-bottom: 4.8rem;
+}
+
+.list-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.chair-icon {
+  stroke: #087f5b;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.chair-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.btn--small {
+  font-size: 1.4rem;
+  padding: 8px 12px;
+}
+
+
+
+footer {
+  font-size: 1.4rem;
+  color: #495057;
+  margin-bottom: 4.8rem;
+}
+
+
+
+
+
+
+/* -------------------------------- */
+/* //BENIM EKLEDIKLERIM */
+/* ----------------------------- */
+.animation-chair:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
